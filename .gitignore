@@ -1,0 +1,5 @@
+/venv/*
+best.pt
+*.pt
+test.py
+.idea

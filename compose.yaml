@@ -1,0 +1,16 @@
+services:
+  model:
+    build:
+        context: ./model
+    volumes:
+      - type: bind
+        source: /home/robot/yolo_gun_detect/weights/
+        target: /weights/
+    ipc: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
