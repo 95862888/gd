@@ -11,7 +11,7 @@ def generate_frames(rtsp_url):
         username = "admin"
         password = "A1234567"
 
-        rtsp_url = f"rtsp://{username}:{password}@188.170.176.190:8028/Streaming/Channels/101?transportmode=unicast&profile=Profile_1"
+        rtsp_url = f"rtsp://{username}:{password}@188.170.176.190:8031/Streaming/Channels/101?transportmode=unicast&profile=Profile_1"
 
     video_url = rtsp_url
 
